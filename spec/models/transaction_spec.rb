@@ -26,9 +26,9 @@ RSpec.describe Transaction, type: :model do
     expect(@transaction).to_not be_valid
   end
 
-  it 'should not be valid when the value is less than zero' do
+  it 'should be valid when the value is less than zero' do
     @transaction.value = -5.30
-    expect(@transaction).to_not be_valid
+    expect(@transaction).to be_valid
   end
 
   it 'should not find the transaction of other client' do

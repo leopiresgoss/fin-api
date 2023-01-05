@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Client.destroy_all
 Transaction.destroy_all
+Client.destroy_all
 
 client1 = Client.create name: 'Maria', taxnumber: '123456789', bank_id: '123456789'
 client2 = Client.create name: 'João', taxnumber: '123456890', bank_id: '123456789'
